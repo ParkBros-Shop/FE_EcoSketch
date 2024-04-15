@@ -12,6 +12,8 @@ import QnA from './pages/QnA.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
 import PurchaseList from './pages/PurchaseList.jsx';
 import Review from './pages/Review.jsx';
+import Product from './pages/Product.jsx';
+import Notice from './pages/Notice.jsx';
 
 
 const router = createBrowserRouter([
@@ -26,8 +28,10 @@ const router = createBrowserRouter([
       { path: 'postList', element: <QnA /> },
       { path: 'payment', element: <Payment /> },
       { path: 'kakaoLogin', element: <KakaoLogin /> },
+      { path: 'product', element: <Product /> },
       { path: 'productDetail', element: <ProductDetail /> },
       { path: 'purchaseList', element: <PurchaseList /> },
+      { path: 'notice', element: <Notice /> },
       { path: 'review', element: <Review /> },
       { path: '*', element: <NotFound /> },
     ],

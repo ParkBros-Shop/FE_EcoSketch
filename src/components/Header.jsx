@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="flex justify-between  ">
+    <header className="w-full fixed z-40">
         <div className="navbar h-20 px-5 bg-white ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -12,7 +12,7 @@ const Header = () => {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>원두 종류</a></li>
+        <Link to="/productDetail"><li>원두 종류</li></Link>
         <li>
           <a>원두</a>
           <ul className="p-1">
@@ -27,11 +27,11 @@ const Header = () => {
     <Link to="/"><img src="/src/assets/EcoSketch.png" className="w-32 ml-5"/></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 text-xl">
-      <li><a>원두 종류</a></li>
+    <ul className="menu menu-horizontal px-1 text-xl items-center align-middle">
+      <Link to="/product"><li className="btn bg-white border-none text-xl font-light">원두 종류</li></Link>
       <li>
         <details>
-          <summary>원두</summary>
+          <summary className="btn bg-white border-none text-xl pb-0 pt-2.5 font-light">원두</summary>
           <ul className="w-28 px-0 mt-0">
             <li><a>200g</a></li>
             <li><a>500g</a></li>
@@ -39,7 +39,7 @@ const Header = () => {
           </ul>
         </details>
       </li>
-      <li><a>공지사항</a></li>
+      <Link to="/notice"><li className="btn bg-white border-none text-xl font-light">공지사항</li></Link>
     </ul>
   </div>
   <div className="navbar-end text-xl">

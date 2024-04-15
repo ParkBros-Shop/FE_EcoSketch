@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ProductDetail = () => {
+const Notice = () => {
   return <div>ChatRoom</div>;
 };
 
-export default ProductDetail;
+export default Notice;

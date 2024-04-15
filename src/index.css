@@ -2,17 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 #root {
   font-family: 'NanumSquareRound', Arial, sans-serif;
-  max-width: 2000px;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
 }
-
 nav {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 2000px;
 }
 
 @font-face {
