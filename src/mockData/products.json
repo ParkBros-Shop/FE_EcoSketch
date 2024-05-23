@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Ethiopian Coffee",
+    "price": 20,
+    "description": "A rich, full-bodied coffee with a vibrant, winey character.",
+    "image": "ethiopian_coffee.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Colombian Coffee",
+    "price": 18,
+    "description": "Smooth and well-balanced with a nutty flavor and a hint of cocoa.",
+    "image": "colombian_coffee.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Brazilian Coffee",
+    "price": 15,
+    "description": "A medium-bodied coffee with a sweet, chocolatey taste.",
+    "image": "brazilian_coffee.jpg"
+  }
+]

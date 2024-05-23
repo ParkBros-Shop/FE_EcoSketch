@@ -13,7 +13,7 @@ const Footer = () => {
           <li className="mr-2.5">사업자등록번호 : 897-29-01364</li>
           <li className="mr-2.5">|</li>
           <li className="mr-2.5">통신판매업 신고 : 제2023-경기김포-3650 [링크]</li>
-          <li className="mr-2.5">|</li>
+          <li className="mr-2.5">|</li> 
           <li className="mr-2.5">대표자 : 김옥화</li>
         </ul>
         <ul className="flex">
