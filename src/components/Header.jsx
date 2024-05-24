@@ -28,7 +28,7 @@ const Header = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-xl">
-      <li><a>원두 종류</a></li>
+       <Link to="/product"><li className="btn bg-white border-none text-xl font-light">원두 종류</li></Link>
       <li>
         <details>
           <summary>원두</summary>

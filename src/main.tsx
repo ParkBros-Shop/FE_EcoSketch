@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import App from './App.tsx';
 import NotFound from '../src/pages/NotFound.jsx';
 import NaverLogin from './pages/NaverLogin.jsx';
@@ -9,6 +10,7 @@ import MyPage from './pages/MyPage.jsx';
 import Payment from './pages/Payment.jsx';
 import KakaoLogin from './pages/KakaoLogin.jsx';
 import QnA from './pages/QnA.jsx';
+import Product from './pages/Product.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
 import PurchaseList from './pages/PurchaseList.jsx';
 import Review from './pages/Review.jsx';
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
       { path: 'postList', element: <QnA /> },
       { path: 'payment', element: <Payment /> },
       { path: 'kakaoLogin', element: <KakaoLogin /> },
+      { path: 'product', element: <Product /> },
       { path: 'productDetail', element: <ProductDetail /> },
       { path: 'purchaseList', element: <PurchaseList /> },
       { path: 'review', element: <Review /> },
@@ -34,8 +37,12 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient();
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>,
 );
