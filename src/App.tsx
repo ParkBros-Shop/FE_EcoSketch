@@ -3,14 +3,15 @@ import Header from './components/Header';
 import Footer from './components/Footer.jsx';
 import './index.css';
 
-
 function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <Outlet />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
